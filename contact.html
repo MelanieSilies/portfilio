@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/58f5d08b96.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="contact.css">
+    <title>Melanie Silies | Portfolio</title>
+</head>
+<body>
+    
+    <header>
+        <img class="logo" src="./images/logo.svg" alt="Logo">
+        <div class="dropdown">
+            <button class="dropbtn">Menü</button>
+            <div class="dropdown-content">
+                <a href="./index.html">Start</a>
+                <a href="./about.html">Über mich</a>
+                <a href="./skills.html">Skills & Services</a>
+                <a href="./projects.html">Projekte</a>
+                <a href="./contact.html">Kontakt</a>
+            </div>
+            </div>
+    </header> 
+    <main>
+        <nav class="socials"> 
+            <a class="socialicon grayscale" href="#" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/Icons/instagram-1-svgrepo-com.svg" alt="instagram">
+            </a>
+            <a class="socialicon grayscale" href="#" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/Icons/github-color-svgrepo-com.svg" alt="gitHub">
+            </a>
+            <a class="socialicon grayscale" href="#" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/Icons/linkedin-1-svgrepo-com.svg" alt="linkedin">
+            </a>
+        </nav>
+
+        <nav class="nav-contact">
+            <a class="contacticon grayscale" href="#" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/Icons/whatsapp-svgrepo-com.svg" alt="whatsapp">
+            </a>
+            <a class="contacticon grayscale" href="#" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/Icons/slack-svgrepo-com.svg" alt="slack">
+            </a>
+            <a class="contacticon grayscale" href="#" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/Icons/telegram-svgrepo-com.svg" alt="telegram">
+            </a>
+        </nav>
+
+        <h2 class="getintouch">
+            Get in Touch
+        </h2>
+    <div class="formular">
+        <form action="mailto:info@melanie-silies.de" method="post">
+            <input type="text" name="name" id="name" placeholder="* Vollständiger Name" required>
+
+            <input type="email" name="email" id="email" placeholder="* E-Mail adresse"required>
+
+            <input type="number" name="tel" id="tel" placeholder="Telefonnummer (optional)">
+
+            <h5>Womit darf ich helfen? <br>
+            <span>Mehrfachauswahl möglich</span></h5>
+            <span class="checkboxes">
+                <input type="checkbox" id="website1" class="check" name="website1" value="Website neuerstellung">
+                <label for="website1"> Website neuerstellung</label>
+                <br><br>
+                <input type="checkbox" id="website2" class="check" name="website2" value="Website optimierung">
+                <label for="website2"> Website optimierung</label>
+                <br><br>
+                <input type="checkbox" class="check" id="CI" name="CI" value="CI">
+                <label for="CI"> Corporate Identity</label> 
+                <br><br>
+                <input type="checkbox" id="grafik1" class="check" name="grafik1" value="Logo">
+                <label for="grafik1"> Grafikdesign</label>
+                <br><br>
+                <input type="checkbox" id="grafik2" class="check" name="grafik2" value="social media">
+                <label for="grafik2"> Socialmedia Content</label>
+                <br><br>
+                <input type="checkbox" id="text1" class="check" name="text1" value="text">
+                <label for="text1"> Texterstellung</label><br>
+
+            </span>
+
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Nachricht"></textarea>
+
+            <button class="submit" type="submit">Senden</button>
+        </form>
+    </div>
+
+    </main>
+    <footer>
+        <a href="./impressum.html">Impressum</a>
+        <a href="./datenschutz.html">Datenschutz</a>
+        <p>Copyright Melanie Silies 2023</p>
+    </footer>
+
+</body>
+</html>

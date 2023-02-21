@@ -1,0 +1,298 @@
+
+:root 
+{
+    --main-brand-color:#97F0B5;
+    --background-color:rgb(21, 21, 21);
+    --secondary-background-color:rgb(80, 80, 80);
+    --light-secondary-color:grey;
+    --text-color:rgb(240, 240, 240);
+    --secondary-text-color:rgb(185, 185, 185);
+    --secondary-font-family: 'playfair Display', serif;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+html 
+{
+    font-size: 62.5%;
+    font-family: 'roboto', sans-serif;
+}
+
+body 
+{
+    /* border: 2px solid red; */
+    font-size: 2rem;
+    width: 100%;
+    max-height: 100vh;
+    background: var(--background-color);
+}
+
+
+/* generals */
+a
+{
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 1rem;
+}
+
+.grayscale {
+    filter: grayscale(95%);
+    transition: 0.3s;
+}
+.grayscale:hover {
+    filter: grayscale(0%);
+}
+
+.maintextcolor 
+{
+    color:var(--main-brand-color);
+    font-family: var(--secondary-font-family);
+}
+h2 {
+    color: var(--text-color);
+}
+ 
+.logo {
+    height: 10rem;
+    width: 10rem;
+    position: relative;
+    left: 5rem;  
+}
+
+/* Dropdown */
+.dropbtn {
+    background-color: var(--secondary-background-color);
+    color: white;
+    padding: 20px;
+    width: 16rem;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 5rem;
+  }
+  
+  .dropdown {
+    display: block;
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    justify-content: center;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: var(--secondary-background-color);
+    color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: var(--text-color);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: var(--background-color)}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: var(--main-brand-color);
+    color: var(--background-color);
+  }
+
+ p {
+    color: var(--text-color);
+ }
+
+ .datenschutz,
+ .impressum
+ {
+    padding:15rem;
+ }
+ .zurück {
+    margin-left: 15rem;
+ }
+ 
+ .zurück a {
+    color: var(--background-color);
+ }
+
+/* MAIN */
+main 
+{
+    /* border: 2px solid rgb(0, 0, 255); */
+    width: 100vw;
+    min-height: 70vh;
+    position: relative;
+    margin-top: 10rem;
+}
+/* nav socials */
+
+.socials 
+{
+    /* border: 2px solid red; */
+    width: 6rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    top: 6rem;
+    left: 1rem;
+    padding: 1rem;
+}
+
+.socialicon img 
+{
+    height: 3rem;
+    width: 3rem;
+}
+
+/* Nav-contact */
+
+.nav-contact
+{
+    /* border: 2px solid red; */
+    width: 6rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    position: fixed;
+    top: 6rem;
+    right: 1.5rem;
+    padding: 1rem;
+}
+
+.contacticon img 
+{
+    height: 3rem;
+    width: 3rem;
+}
+
+
+/*  INHALT */
+
+.content 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    animation: fadein 3s;
+}
+
+.contenttext 
+{
+    color: var(--text-color);
+    font-family: var(--secondary-font-family);
+    font-size: 5rem;
+}
+
+
+.contenttext span 
+{
+    color: var(--main-brand-color);
+}
+
+.contentbild 
+{
+    margin-left: 2rem;
+    background-image: url(./images/main-shine.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    height: 40rem;
+    width: 40rem;
+}
+
+footer {
+    width: 100%;
+    height: 20rem;
+    margin-top: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p,
+footer a {
+    color: var(--secondary-text-color);
+    padding-left: 1rem;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+}
+
+footer a:hover {
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+
+
+@keyframes fadein {
+    from { opacity: 0 }
+    to   { opacity: 1}
+  }
+
+@media(min-width:786px) 
+{
+    header {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        position: relative;
+    }
+    .dropbtn {
+        position: absolute;
+        right: 4rem;
+        justify-content: center;
+    }
+
+    .logo {
+        height: 20rem;
+        width: 20rem;
+    }
+
+    .contentbild {
+        
+        height: 80rem;
+        width: 80rem;
+    }
+
+    .content 
+    {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 90%;
+    padding-left: 5rem;
+    }
+
+    .contenttext 
+    {
+    color: var(--text-color);
+    font-family: var(--secondary-font-family);
+    font-size: 7rem;
+    padding-left: 4rem;
+    }
+}

@@ -1,0 +1,80 @@
+.projects-text {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.card {
+    height: 40rem;
+    width: 60%;
+    position: relative;
+    left: 20vw;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-end;
+    text-decoration: none;
+    border: 2px solid var(--secondary-background-color);
+    margin-bottom: 20px;
+    
+  }
+
+  .card1 {
+    background-image: url(./images/referenzen/overbau_visitenkarten.png);
+    background-size: cover;
+  }
+
+  .card2 {
+    background-image: url(./images/referenzen/schnitzelwelt.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .card3 {
+    background-image: url(./images/referenzen/hanteln.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .card4 {
+    background-image: url(./images/referenzen/eventview.png);
+    background-size: cover;
+    background-position: center;
+  }
+
+  
+  
+  .inner {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    background: var(--secondary-background-color);
+    box-sizing: border-box;
+    padding: 40px;
+    
+    
+  }
+  
+  .title {
+    font-size: 24px;
+    color: black;  
+    text-align: center;
+    font-weight: 700;
+    color: var(--text-color);
+    position: relative;
+    margin: 0 0 20px 0;
+    padding-top: 2rem;
+    
+   
+  }
+  
+  .subtitle {
+    color: var(--text-color);
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+  

@@ -1,0 +1,190 @@
+.skills {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 80%;
+    /* border: 2px solid red; */
+    justify-content: center;
+    padding-top: 10rem;
+}
+
+.skills-text {
+    text-align: center;
+    color: var(--text-color);
+}
+
+.box {
+    place-self: center;
+}
+
+.box img {
+    height: 10rem;
+    width: 10rem;
+}
+
+.skills-container {
+    padding-top: 10rem;
+    padding-bottom: 6rem;
+    display: grid;
+    gap: 60px;
+    width: 80%;
+    padding-left: 5rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:
+    1fr
+    1fr
+    1fr
+    1fr
+    1fr
+    1fr
+    ;
+    grid-template-areas:
+    "html        css"
+    "github      figma"
+    "canva       trello"
+    "photoshop   vscode"
+    "lightroom   illustrator"
+    " nodejs      ."
+    "python     react"
+    "js         sass"
+    ;
+}
+
+
+
+.html {
+    grid-area: html;
+}
+
+.css {
+    grid-area: css;
+}
+
+.github {
+    grid-area: github;
+}
+
+.figma {
+    grid-area: figma;
+}
+.js {
+    grid-area: js;
+}
+
+.sass {
+    grid-area: sass;
+}
+
+.photoshop {
+    grid-area: photoshop;
+}
+.lightroom {
+    grid-area: lightroom;
+}
+.illustrator {
+    grid-area: illustrator;
+}
+.python {
+    grid-area: python;
+}
+.react {
+    grid-area: react;
+}
+.nodejs {
+    grid-area: nodejs;
+}
+
+.vscode {
+    grid-area: vscode;
+}
+
+.canva {
+    grid-area: canva;
+}
+.trello {
+    grid-area: trello;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: center;
+}
+
+.service-text {
+    text-align: center;
+    color: var(--text-color);
+    padding-bottom: 10rem;
+}
+
+.leistungen {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 10rem;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    box-shadow: 13px 13px 20px 5px rgba(249,249,249,0.61);
+    width: 65%;
+    min-height: 40rem;
+    color: var(--text-color);
+}
+
+.card h2 {
+    font-family: var(--secondary-font-family);
+    color: var(--main-brand-color);
+}
+
+.card p {
+    padding:0 1rem;
+}
+
+
+@media(min-width: 768px) {
+.skills-text {
+    text-align: center;
+    margin: 0 auto;
+}
+
+    .skills-container {
+        margin: 0 auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows:
+        1fr
+        1fr
+        1fr
+        1fr;
+    
+        grid-template-areas:
+        "html      css        github  "
+        "figma     js         sass"
+        "vscode    canva      trello"
+        "photoshop lightroom  illustrator"
+        "python    react      nodejs"
+        ;
+    }
+    
+    .service-container {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        margin-top: 10rem;
+    }
+
+    .servicebox {
+        height: 25rem;
+        width: 25rem;
+    }
+
+    .card p {
+        padding: 0 3rem ;
+    }
+
+}

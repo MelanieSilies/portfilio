@@ -1,0 +1,129 @@
+.getintouch {
+    font-family: var(--secondary-font-family);
+    display: flex;
+    justify-content: center;
+    margin: 10rem;
+}
+
+.formular {
+    margin: 0 auto;
+    background-color: var(--background-color);
+    padding: 1rem;
+    width: 27rem;
+}
+
+form {
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 0.8rem;
+}
+
+input {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-size: 1.6rem;
+    padding: 1rem;
+    border: none;
+    border-bottom:1px solid var(--text-color);
+}
+
+input[type=checkbox] {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  input[type=checkbox]:before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 0;
+    left: 0;
+    border-radius: 3px;
+    padding: 1px;
+    background-color: var(--secondary-background-color);
+  }
+  
+  input[type=checkbox]:checked:before {
+    background-color: var(--secondary-background-color);
+  }
+  
+  input[type=checkbox]:checked:after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 10px;
+    border: solid var(--main-brand-color);
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 2px;
+    left: 6px;
+  }
+
+::placeholder{
+    color: rgb(146, 146, 146)
+}
+textarea {
+    color: var(--text-color);
+    font-size: 1.6rem;
+    padding: 1rem;
+    font-family: 'roboto', sans-serif;
+    background-color: #1d1d1d;
+    border:1px solid var(--text-color);
+}
+
+h5,
+h5 span {
+    color: var(--text-color);
+}
+
+h5 span {
+    font-size: 1rem;
+}
+
+label {
+    color: var(--text-color);
+}
+
+.checkboxes {
+    color: var(--text-color);
+    font-size: 1.6rem;
+    padding-bottom: 2.5rem;
+}
+
+.check {
+    accent-color: #97F0B5;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    font-family: var(--secondary-font-family);
+    border: 1px solid var(--text-color);
+    width: 50%;
+    padding: 10px 20px;
+    margin: 2rem auto;
+}
+
+.submit:active {
+    background-color: #97F0B5;
+    color: black;
+}
+
+
+@media(min-width:786px) 
+{
+    .formular {
+        width: 70vw;
+    }
+    .submit {
+        max-width: 20rem;
+    }
+}
