@@ -21,7 +21,6 @@ html
 
 body 
 {
-    /* border: 2px solid red; */
     font-size: 2rem;
     width: 100%;
     max-height: 100vh;
@@ -61,7 +60,11 @@ h2 {
     left: 5rem;  
 }
 
-/* Dropdown */
+p {
+    color: var(--text-color);
+ }
+
+/* Dropdown Navigation */
 .dropbtn {
     background-color: var(--secondary-background-color);
     color: white;
@@ -113,9 +116,7 @@ h2 {
     color: var(--background-color);
   }
 
- p {
-    color: var(--text-color);
- }
+/* Datenschutz & Impressum */
 
  .datenschutz,
  .impressum
@@ -131,6 +132,7 @@ h2 {
  }
 
 /* MAIN */
+
 main 
 {
     /* border: 2px solid rgb(0, 0, 255); */
@@ -139,6 +141,8 @@ main
     position: relative;
     margin-top: 10rem;
 }
+
+
 /* nav socials */
 
 .socials 
@@ -185,7 +189,7 @@ main
 }
 
 
-/*  INHALT */
+/*  INHALT Indexseite */
 
 .content 
 {
@@ -223,6 +227,8 @@ main
     height: 40rem;
     width: 40rem;
 }
+
+/* FOOTER */
 
 footer {
     width: 100%;
