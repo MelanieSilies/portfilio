@@ -76,7 +76,11 @@
         background-size: contain;
         right: 0;
         top: 12rem;
+        filter: grayscale(100%);
+    }
 
+    .aboutimg:hover {
+        filter: grayscale(0%);
     }
 
     .zertifikate {

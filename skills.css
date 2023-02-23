@@ -134,19 +134,20 @@
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
-    box-shadow: 5px 5px 20px 5px rgba(249,249,249,0.1);
+    background-color: rgb(220, 220, 220);
     width: 65%;
     min-height: 40rem;
-    color: var(--text-color);
 }
 
 .card h2 {
     font-family: var(--secondary-font-family);
-    color: var(--main-brand-color);
+    color: #97F0B5;
+    text-shadow: 1px 1px 5px rgb(117, 117, 117);
 }
 
 .card p {
     padding:0 1rem;
+    color: var(--background-color);
 }
 
 
